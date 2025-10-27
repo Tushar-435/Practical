@@ -1,0 +1,26 @@
+
+import java.util.Scanner;
+
+public class multiplicationTable {
+    public static void main(String[] args) {
+        int num = readNum();
+        table1(num);
+        
+    }
+    public static int readNum(){
+
+    Scanner sc = new Scanner(System.in);
+        System.out.println("Please Enter here :");
+
+        int num  = sc.nextInt();
+        return num;
+    }
+
+      public static void table1(int num) {
+        System.out.println("Multiplication table for " + num + ":");
+        for (int i = 1; i <= 10; i++) {
+            int num1 = num * i;
+            System.out.println(num + " * " + i + " = " + num1);
+        }
+    }
+}
